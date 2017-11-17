@@ -50,6 +50,18 @@ class CriticalGenerator implements CssGeneratorInterface
     }
 
     /**
+     * Set the credentials to the html fetcher
+     *
+     * @param  array $credentials
+     *
+     * @return void
+     */
+    public function setCredentials($credentials)
+    {
+        $this->htmlFetcher->credentials = $credentials;
+    }
+
+    /**
      * Set the path to the Critical bin (executable.)
      *
      * @param  string $critical
